@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion Template</title>
+    <style>
+        /* Color variables */
+        :root {
+            --main-color: #007BFF;
+            --light-color: #60AFFF;
+            --dark-color: #0056B3;
+
+            --text-main-color: #333;
+            --text-light-color: #666;
+            --text-dark-color: #111;
+        }
+
+        /* Base styling for the gainsight-engagement elements */
+        .gainsight-engagement-container {
+            font-family: 'Lato', sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            color: var(--text-main-color);
+        }
+
+        .gainsight-engagement-accordion {
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            text-align: left;
+            border: none;
+            outline: none;
+            transition: background-color 0.2s;
+        }
+
+        .gainsight-engagement-accordion:hover,
+        .gainsight-engagement-accordion.active {
+            background-color: var(--light-color);
+        }
+
+        .gainsight-engagement-panel {
+            padding: 0 18px;
+            background-color: white;
+            display: none; /* Hidden by default */
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="gainsight-engagement-container">
+        
+        <!-- Accordion -->
+        <button class="gainsight-engagement-accordion">Section 1</button>
+        <div class="gainsight-engagement-panel">
+            <p>Content for section 1 goes here.</p>
+        </div>
+
+        <button class="gainsight-engagement-accordion">Section 2</button>
+        <div class="gainsight-engagement-panel">
+            <p>Content for section 2 goes here.</p>
+        </div>
+
+        <!-- More accordion sections can be added as needed -->
+
+    </div>
+
+    <script>
+        // JS for accordion
+        var acc = document.getElementsByClassName("gainsight-engagement-accordion");
+        for (var i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>

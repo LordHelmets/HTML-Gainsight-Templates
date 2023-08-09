@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template with Footer</title>
+    <style>
+        /* Color variables */
+        :root {
+            --main-color: #007BFF;
+            --light-color: #60AFFF;
+            --dark-color: #0056B3;
+
+            --text-main-color: #333;
+            --text-light-color: #666;
+            --text-dark-color: #111;
+        }
+
+        /* Base styling for the gainsight-engagement elements */
+        .gainsight-engagement-container {
+            font-family: 'Lato', sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            color: var(--text-main-color);
+        }
+
+        .gainsight-engagement-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        .gainsight-engagement-header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: var(--text-dark-color);
+        }
+
+        .gainsight-engagement-content {
+            font-size: 16px;
+            margin-bottom: 20px; /* Extra space before the footer */
+            color: var(--text-light-color);
+        }
+
+        .gainsight-engagement-footer {
+            font-size: 14px;
+            border-top: 1px solid var(--text-light-color);
+            padding-top: 10px;
+            color: var(--text-dark-color);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="gainsight-engagement-container">
+        <!-- Main image -->
+        <img src="https://images.unsplash.com/photo-1600716051809-e997e11a5d52" alt="Description of Image" class="gainsight-engagement-image">
+        
+        <!-- Header -->
+        <div class="gainsight-engagement-header">Header Goes Here</div>
+        
+        <!-- Main Content -->
+        <div class="gainsight-engagement-content">Your content goes here.</div>
+
+        <!-- Footer -->
+        <div class="gainsight-engagement-footer">Footer content or links go here.</div>
+    </div>
+</body>
+</html>
