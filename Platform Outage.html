@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planned Outage Notification</title>
+    <style>
+        /* Color variables */
+        :root {
+            --main-color: #FF5733;
+            /* Main Notification Color - Orange for attention */
+            --light-color: #FF8F66;
+            /* Lighter Variant */
+            --dark-color: #C73800;
+            /* Darker Variant */
+
+            --text-main-color: #FFFFFF;
+            /* White for clarity against the main color */
+            --text-light-color: #FFDDCC;
+            /* Lighter Text Variant */
+            --text-dark-color: #BF4500;
+            /* Darker Text Variant */
+        }
+
+        /* Base styling for the gainsight-engagement notification */
+        .gainsight-engagement-notification {
+            font-family: 'Lato', sans-serif;
+            background-color: var(--main-color);
+            color: var(--text-main-color);
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            /* To ensure it's on top */
+            text-align: center;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .gainsight-engagement-header {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .gainsight-engagement-content {
+            font-size: 16px;
+        }
+
+        .gainsight-engagement-timing {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gainsight-engagement-notification">
+        <!-- Title -->
+        <div class="gainsight-engagement-header">Planned Platform Outage</div>
+
+        <!-- Main Content -->
+        <div class="gainsight-engagement-content">
+            Our platform will be under maintenance on
+            <!-- 
+            Replace [DAY] with the appropriate day of the week, e.g., "Friday".
+            Replace [UTC TIME] with the outage time in UTC, e.g., "14:00 - 16:00".
+            Replace [MST TIME] with the outage time in MST, e.g., "07:00 - 09:00".
+            -->
+            <span class="gainsight-engagement-timing">[DAY], [UTC TIME] UTC / [MST TIME] MST</span>.
+            We apologize for the inconvenience and thank you for your patience!
+        </div>
+    </div>
+</body>
+
+</html>
