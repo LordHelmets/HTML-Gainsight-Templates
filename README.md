@@ -14,6 +14,7 @@ Customizable Themes: We’ve incorporated color variables so you can tweak to ma
 2. **Title and Content to the Left of an Image:** For when you want the image to subtly hint, "Hey, there's more here!"
 3. **Top Image, Content, and Footer:** Your go-to choice for that extra info or links at the bottom.
 4. **Accordion-Style Content:** Because who doesn't like a surprise? Tap and see what unfolds!
+5. **Platform Outage:** Look, even software feels a bit down sometimes. Let your users know.
 
 ## Getting Started 🏁
 1. Clone this repo:
