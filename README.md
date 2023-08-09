@@ -20,7 +20,7 @@ Customizable Themes: We’ve incorporated color variables so you can tweak to ma
 ```bash
 git clone https://github.com/LordHelmets/HTML-Gainsight-Templates.git
 ```
-2. Dive into any template HTML file, and you'll find detailed comments guiding you on how to customize it to your heart's content. Honestly, it's almost as fun as those "choose your own adventure" books! 📖
+2. Open any template HTML file, and you'll find detailed comments guiding you on how to customize it to your heart's content. It's basically the same as those "choose your own adventure" books! 📖
 3. Tweak, customize, and embed these templates into your software for a seamless user experience.
 
 ## Contributions 🌟
